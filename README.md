@@ -1,5 +1,8 @@
 # LickHunterPro Powershell scripts
 
+- Create a folder with a name of choice (LickHunterPro for example)
+- Place the scripts within this folder
+
 Install-LickHunterPro.ps1
 - Checks and installs prerequisites NodeJS and PM2
 - Downloads Latest LickHunterPro
