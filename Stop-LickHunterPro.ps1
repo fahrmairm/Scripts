@@ -14,5 +14,5 @@ Stop-Process -Name cmd
 Stop-Process -Name node
 }
 else {
-    [System.Windows.MessageBox]::Show('Lick Hunter Pro for Binance is not running!')
+    [System.Windows.MessageBox]::Show('LickHunter Pro is closed!')
 }

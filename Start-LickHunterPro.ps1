@@ -26,7 +26,7 @@ if ((Test-Path .\$exchange1) -xor (Test-Path .\$exchange2)) {
     $profitpath = "$PSScriptRoot\$exchange\$profit"    
     $original = (Get-Item $PSScriptRoot\settings-$exchange.py).LastWriteTime
     $backup = (Get-Item $PSScriptRoot\$settingsbackup\*-settings-$exchange.py -ErrorAction SilentlyContinue | Select-Object -Last 1).LastWriteTime
-    $updatedmsg = "Lick Hunter Pro has been updated to version $version, please check your settings-$exchange.py"
+    $updatedmsg = "LickHunter Pro has been updated to version $version, please check your settings-$exchange.py"
     
     #Stop bot if running
     if ((Get-Process $websocket -ErrorAction SilentlyContinue) -or (Get-Process $profit -ErrorAction SilentlyContinue)) {
@@ -84,6 +84,6 @@ if ((Test-Path .\$exchange1) -xor (Test-Path .\$exchange2)) {
 
 #Request to install
 else {
-    $notinstalledmsg = "Lick Hunter Pro is not installed, please run Install-LickHunterPro.ps1"
+    $notinstalledmsg = "LickHunter Pro is not installed, please run Install-LickHunterPro.ps1"
     [System.Windows.MessageBox]::Show($notinstalledmsg)
 }

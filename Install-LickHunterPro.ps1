@@ -60,9 +60,9 @@ do
 }
 until ($input -eq 'q' -or $input -eq '1' -or $input -eq '2')
 
-$allreadyinstalledmsg = "Lick Hunter Pro is allready installed, you cannot install two bots in the same folder!"
-$successfullyinstalledmsg = "Lick Hunter Pro for $exchange is successfully installed!"
-$downloadfailedmsg
+$allreadyinstalledmsg = "LickHunter Pro is allready installed, you cannot install two bots in the same folder!"
+$successfullyinstalledmsg = "LickHunter Pro for $exchange is successfully installed!"
+$downloadfailedmsg = "LickHunter Pro failed to download, restart the script and try again!"
 
 If ((Test-Path $PSScriptRoot\Binance) -eq $true -or (Test-Path $PSScriptRoot\Bybit) -eq $true) {
     [System.Windows.MessageBox]::Show($allreadyinstalledmsg)
