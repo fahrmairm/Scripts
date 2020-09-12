@@ -22,4 +22,4 @@ Stop-LickHunterPro.ps1
 
 # You are free to use these scipts, i'm not resposible for any loss you encounter because of my scipts #
 
- 
+ETH: 0xA63Bca4aa47e42498889AB5185336FEa54835C7E
