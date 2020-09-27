@@ -24,5 +24,3 @@ If running a new version of LickHunter Pro, always check the settings.py if some
 - Stops LickHunterPro from running
 
 # You are free to use these scipts, i'm not resposible for any loss you encounter because of my scipts
-
-ETH: 0xA63Bca4aa47e42498889AB5185336FEa54835C7E
