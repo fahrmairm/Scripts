@@ -1,26 +1,30 @@
-# LickHunterPro Powershell scripts
+# LickHunterPro Variable Pairs
 
-- Create a folder with a name of choice (LickHunterPro for example)
-- Place the scripts within this folder
+On the LickHunterPro Discord a user named Sanduckchan created an overview on the Binance Futures liquidations. You can visit the site @ http://www.lickhunter.com/data/
+My script fetches the pairs from the site and places them in the settings.py. The problem was with open orders. When the pairs got replaced you lost track of the open orders. That's why the script also checks your open orders on Binance Futures and combines those pairs with the pairs from the site.
 
-# Install-LickHunterPro.ps1
-- Checks and installs prerequisites NodeJS and PM2
-- Downloads Latest LickHunterPro
-- Asks what Exchange you want LickHunterPro to work on and copies only that part to scriptroot
-- Copies the settings.py to the scriptroot and renames it to settings-%exchange%.py
+# Features:
+- Choose 1 for Top 10 burned by Volume - 24h
+- Choose 2 for Top 10 by Liq-Events - 24h
+- Choose 3 for Average Liq-Volume in USD - 24h
+- Choose 4 for Average Liq-Amount - 24h
+- Set a maximum of traidingpairs
+- Set a maximum of open orders, so you don't get too much open orders
+- Open order isolation. When X percent of your wallet balance gets hit by open orders, only the open order pairs will be traded until the percentage drops below X
+- Option to not trade latest pairs on Binance Futures, these pairs come from CoinGecko https://www.coingecko.com/en/exchanges/binance_futures and are listed as Unverified Tickers
+- Blacklist for pairs you don't want to trade
 
-Next you need to configure your settings-%echange%.py
-Check http://www.lickhunter.com/settings/ for the explanation of the options to set
-If running a new version of LickHunter Pro, always check the settings.py if some settings are new/changed, the bot can have issues if the settings are not right
+# Installation
 
-# Start-LickHunterPro.ps1
-- Checks if the bot is running, if true, it stops the bot first before starting
-- Checks if there is a new version of LickHunterPro and installs it
-- If settings-%exchange%.py is changed, it auto creates a backup of that version
-- Renames settings-%exchange%.py and copies it to the Websocket and Profit folder as settings.py
-- Starts %exchange%websocket.exe, %exchange%profit.exe and bot monitor
-
-# Stop-LickHunterPro.ps1
-- Stops LickHunterPro from running
-
-# You are free to use these scipts, i'm not resposible for any loss you encounter because of my scipts
+- Place **Start-LickHunterPro-VarPair.ps1** and **LickHunterPro.ps1** in the root of the LickHunterPro folder, in my case C:\LickHunterPro\
+- Edit **Start-LickHunter-Pro-VarPair.ps1** with **NotePad++** or **Windows PowerShell ISE**
+  - $APIKey = "key" **Set your Binance Futures API key, this can be a read only one**
+  - $APISecret = "secret" **Set your Binance Futures secret**
+  - $tradePairs = "1" **Choose 1, 2, 3 or for, depending what chart your wan't to base your pairs on**
+  - $maxPairs = "8" **The maximum pairs you want to trade, always the top of the chart is used**
+  - $maxPositions = "3" **The maximum orders you want to have open at the same time**
+  - $openOrderIsolationPercentage = "10" **Only trade open order pairs when X percentage of wallet balance is reached**
+  - $newPairs = $false **Choose to trade the latest pairs on Binance Futures, default is $false (new pairs are much to volatile)**
+  - $blacklist = 'BTC','DEFI' **Set your personal blacklist for pairs you don't want to trade**
+- Save your changed settings
+- **Right-Mouse-Click** on **Start-LickHunterPro-VarPair.ps1** and select **Run with PowerShell**
