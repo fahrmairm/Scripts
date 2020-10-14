@@ -18,7 +18,7 @@ My script fetches the pairs from the site and places them in the settings.py. Th
 - Edit **Start-LickHunter-Pro-VarPair.ps1** with **NotePad++** or **Windows PowerShell ISE**
   - $APIKey = "key" **Set your Binance Futures API key, this can be a read only one**
   - $APISecret = "secret" **Set your Binance Futures API secret**
-  - $tradePairs = "1" **Choose 1, 2, 3 or for, depending what chart your wan't to base your pairs on**
+  - $tradePairs = "1" **Choose 1, 2, 3 or 4, depending what chart your wan't to base your pairs on (1. Top 10 burned by Volume - 24h, 2. Top 10 by Liq-Events - 24h, 3. Average Liq-Volume in USD - 24h, 4. Average Liq-Amount - 24h)**
   - $maxPairs = "8" **The maximum pairs you want to trade, always the top of the chart is used**
   - $maxPositions = "3" **The maximum orders you want to have open at the same time**
   - $openOrderIsolationPercentage = "10" **Only trade open order pairs when X percentage of wallet balance is reached**
