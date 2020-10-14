@@ -12,8 +12,8 @@ My script fetches the pairs from the site and places them in the settings.py. Th
 - Option to not trade latest pairs on Binance Futures, these pairs come from CoinGecko https://www.coingecko.com/en/exchanges/binance_futures and are listed as Unverified Tickers
 - Blacklist for pairs you don't want to trade
 
-# Installation
-- **You have to have a working LickHunterPro configuration and all settings in settings.py except "pairs =" should be inplace!**
+# Installation:
+# **You have to have a working LickHunterPro configuration and all settings in settings.py except "pairs =" should be inplace!**
 - Place **Start-LickHunterPro-VarPair.ps1** and **LickHunterPro.ps1** in the root of the LickHunterPro folder, in my case C:\LickHunterPro\
 - Edit **Start-LickHunter-Pro-VarPair.ps1** with **NotePad++** or **Windows PowerShell ISE**
   - $APIKey = "key" **Set your Binance Futures API key, this can be a read only one**
