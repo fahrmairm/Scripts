@@ -22,7 +22,7 @@ My script fetches the pairs from the site and places them in the settings.py. Th
   - $maxPairs = "8" **The maximum pairs you want to trade, always the top of the chart is used**
   - $maxPositions = "3" **The maximum orders you want to have open at the same time**
   - $openOrderIsolationPercentage = "10" **Only trade open order pairs when X percentage of wallet balance is reached**
-  - $newPairs = $false **Choose to trade the latest pairs on Binance Futures, default is $false (new pairs are much to volatile)**
+  - $whitelist = **Set your personal whitelist of pairs you want to be able to trade**
   - $blacklist = 'BTC','DEFI' **Set your personal blacklist for pairs you don't want to trade**
 - Save your changed settings
 - **Right-Mouse-Click** on **Start-LickHunterPro-VarPair.ps1** and select **Run with PowerShell**
