@@ -11,6 +11,8 @@ My script fetches the pairs from the site and places them in the settings.py. Th
 - **Open order isolation** When X percent of your wallet balance gets hit by open orders, only the open order pairs will be traded until the percentage drops below X
 
 # Installation:
+**PREREQUISITES:**
+**PowerShell 5.1 - https://www.microsoft.com/en-us/download/details.aspx?id=54616**
 **You have to have a working LickHunterPro configuration and all settings in settings.py except "pairs =" should be inplace!**
 - Place **Start-LickHunterPro-VarPairV1.5.ps1**, **LickHunterPro.ps1** and **Stop-LickHunterPro.ps1** in the root of the LickHunterPro folder, in my case C:\LickHunterPro\
 - Edit **Start-LickHunter-Pro-VarPair.ps1** with **NotePad++** or **Windows PowerShell ISE**
