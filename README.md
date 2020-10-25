@@ -33,5 +33,5 @@ My script fetches the pairs from the site and places them in the settings.py. Th
 - Save your changed settings
 - **Right-Mouse-Click** on **Start-LickHunterPro-VarPair.ps1** and select **Run with PowerShell**
 
-**ETH: 0xA63Bca4aa47e42498889AB5185336FEa54835C7E
-**USDT/ERC20 0xA63Bca4aa47e42498889AB5185336FEa54835C7E
+**ETH: 0xA63Bca4aa47e42498889AB5185336FEa54835C7E**
+**USDT/ERC20 0xA63Bca4aa47e42498889AB5185336FEa54835C7E**
