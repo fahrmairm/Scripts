@@ -31,7 +31,8 @@ My script fetches the pairs from the site and places them in the settings.py. Th
   - $maxFundingRate = **For explanation about funding rate you can read this https://www.binance.com/en/support/faq/360033525031**  
 
 - Save your changed settings
-- **Right-Mouse-Click** on **Start-LickHunterPro-VarPair.ps1** and select **Run with PowerShell**
+- Open Powershell and navigate to you LickHunterPro folder. From there run **Get-ChildItem | Unblock-File**
+- Run **Start-LickHunterPro-VarPair.ps1** from PowerShell
 
 # Donate
 - ETH: **0xA63Bca4aa47e42498889AB5185336FEa54835C7E**
