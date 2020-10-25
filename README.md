@@ -35,4 +35,4 @@ My script fetches the pairs from the site and places them in the settings.py. Th
 
 # Donate
 - ETH: **0xA63Bca4aa47e42498889AB5185336FEa54835C7E**
-- USDT/ERC20 **0xA63Bca4aa47e42498889AB5185336FEa54835C7E**
+- USDT/ERC20: **0xA63Bca4aa47e42498889AB5185336FEa54835C7E**
