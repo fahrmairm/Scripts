@@ -12,7 +12,7 @@ My script fetches the pairs from the site and places them in the settings.py. Th
 
 # Prerequisites:
 - PowerShell 5.1 - https://www.microsoft.com/en-us/download/details.aspx?id=54616
-- You have to have a working LickHunterPro configuration and all settings in settings.py should be in place and change your pairs line to: **pairs = []**
+- You have to have a working LickHunterPro configuration, all settings in settings.py should be in place and change your pairs line to: **pairs = []**
 
 # Installation:
 - Place **Start-LickHunterPro-VarPairV1.5.ps1**, **LickHunterPro.ps1** and **Stop-LickHunterPro.ps1** in the root of the LickHunterPro folder, in my case C:\LickHunterPro\
