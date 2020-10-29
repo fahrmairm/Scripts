@@ -8,7 +8,7 @@ My script fetches the pairs from the site and places them in the settings.py. Th
 - Pairs based on **Top 10 burned by Volume - 24h**, **Top 10 by Liq-Events - 24h**, **Average Liq-Volume in USD - 24h** and **Average Liq-Amount - 24h**
 - Set a maximum of traidingpairs
 - Set a maximum of open orders, so you don't get too much open orders
-- **Open order isolation** When X percent of your wallet balance gets hit by open orders, only the open order pairs will be traded until the percentage drops below X
+- Open order isolation - When X percent of your wallet balance gets hit by open orders, only the open order pairs will be traded until the percentage drops below X
 
 # Prerequisites:
 - PowerShell 5.1 - https://www.microsoft.com/en-us/download/details.aspx?id=54616
