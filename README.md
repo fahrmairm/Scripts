@@ -22,7 +22,7 @@ My script fetches the pairs from the site and places them in the settings.py. Th
   - $maxPairs = "8" **The maximum pairs you want to trade, always the top of the chart is used**
   - $maxPositions = "3" **The maximum orders you want to have open at the same time**
   - $openOrderIsolationPercentage = "10" **Only trade open order pairs when X percentage of wallet balance is reached**
-  - $tadingMode = **Choose a mode to base match your pairs. Modes: 1. $staticPairs 2. $whitelist 3. tradingAge**
+  - $tadingMode = **Choose a mode to base match your pairs. Modes: 1. $staticPairs 2. $whitelist 3. $tradingAge**
   - $staticPairs = **Trade only the pairs you want to trade**
   - $whitelist = **Set your personal whitelist of pairs you want to be able to trade**
   - $tradingAge = **All coins below trading age will not be traded**
