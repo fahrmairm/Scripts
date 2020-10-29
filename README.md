@@ -12,8 +12,7 @@ My script fetches the pairs from the site and places them in the settings.py. Th
 
 # Prerequisites:
 - PowerShell 5.1 - https://www.microsoft.com/en-us/download/details.aspx?id=54616
-- You have to have a working LickHunterPro configuration and all settings in settings.py should be in place
-- Change your pairs line to: **pairs = []**
+- You have to have a working LickHunterPro configuration and all settings in settings.py should be in place and change your pairs line to: **pairs = []**
 
 # Installation:
 - Place **Start-LickHunterPro-VarPairV1.5.ps1**, **LickHunterPro.ps1** and **Stop-LickHunterPro.ps1** in the root of the LickHunterPro folder, in my case C:\LickHunterPro\
@@ -23,9 +22,11 @@ My script fetches the pairs from the site and places them in the settings.py. Th
   - $maxPairs = "8" **The maximum pairs you want to trade, always the top of the chart is used**
   - $maxPositions = "3" **The maximum orders you want to have open at the same time**
   - $openOrderIsolationPercentage = "10" **Only trade open order pairs when X percentage of wallet balance is reached**
-  - $tadingMode = **Choose a mode to base match your pairs. Modes: 1. $staticPairs 2. $whitelist**
+  - $tadingMode = **Choose a mode to base match your pairs. Modes: 1. $staticPairs 2. $whitelist 3. tradingAge**
   - $staticPairs = **Trade only the pairs you want to trade**
   - $whitelist = **Set your personal whitelist of pairs you want to be able to trade**
+  - $tradingAge = **All coins below trading age will not be traded**
+  - $blacklist = **You can blacklist coins that are above your trading age, so they won't be traded**
   - $tradePairs = "1" **Choose 1, 2, 3 or 4, depending what chart your wan't to base your pairs on (1. Top 10 burned by Volume - 24h, 2. Top 10 by Liq-Events - 24h, 3. Average Liq-Volume in USD - 24h, 4. Average Liq-Amount - 24h)**
   - $fundingRateThreshold = **$true or $false, default is $false, set to $true if you don't want to trade pairs with a high Funding Rate**
   - $maxFundingRate = **For explanation about funding rate you can read this https://www.binance.com/en/support/faq/360033525031**  
